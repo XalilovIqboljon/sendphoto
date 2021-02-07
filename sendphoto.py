@@ -13,5 +13,5 @@ def sendPhoto(ids):
     return r.json()
 
 
-ids=1679454024
+ids=1395234286
 sendPhoto(ids)
