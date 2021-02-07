@@ -6,7 +6,8 @@ def sendPhoto(ids):
     url = f'https://api.telegram.org/bot{token}/sendPhoto'
     payload ={
         'chat_id':ids,
-        'photo':'https://i.pinimg.com/564x/24/db/19/24db19c5a1a798e10bffc076e70313bb.jpg'
+        'photo':'AgACAgQAAxkDAAMQYB_WjPIennkmT1SxPc8oaFSooDkAAgGsMRt_XgRRWt0yqhJxhTskifkoXQADAQADAgADbQADLXQDAAEeBA',
+        'caption':'TITLE'
     }
     r=requests.get(url,params=payload)
     
@@ -14,4 +15,4 @@ def sendPhoto(ids):
 
 
 ids=1395234286
-sendPhoto(ids)
+pprint(sendPhoto(ids))
